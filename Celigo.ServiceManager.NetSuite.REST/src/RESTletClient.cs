@@ -42,6 +42,14 @@ namespace Celigo.ServiceManager.NetSuite.REST
             IReadOnlyDictionary<string, string> queryParams = null
         );
 
+        Task<HttpResponseMessage> Put<T>(
+            in string account,
+            in string token,
+            in string tokenSecret,
+            in T message,
+            IReadOnlyDictionary<string, string> queryParams = null
+        );
+
         Task<HttpResponseMessage> Get(
             in Passport passport,
             IReadOnlyDictionary<string, string> queryParams = null
@@ -139,6 +147,21 @@ namespace Celigo.ServiceManager.NetSuite.REST
             return this.SendRequest(HttpMethod.Delete, requestUrl, authHeader, _emptyContent);
         }
 
+        
+        public Task<HttpResponseMessage> Put<T>(
+            in string account,
+            in string token,
+            in string tokenSecret,
+            in T message,
+            IReadOnlyDictionary<string, string> queryParams = null)
+        {
+            var urlBuilder = this.CreateUrlBuilder(account);
+            string authHeader =
+                this.GetTbaAuthHeader("PUT", account, token, tokenSecret, urlBuilder.ToString(), queryParams);
+
+            var requestUrl = this.CreateRequestUrl(urlBuilder, queryParams);
+            return this.SendRequest(HttpMethod.Put, requestUrl, authHeader, CreateJsonMessageContent(message));
+        }
         
         public Task<HttpResponseMessage> Post<T>(
             in string account,

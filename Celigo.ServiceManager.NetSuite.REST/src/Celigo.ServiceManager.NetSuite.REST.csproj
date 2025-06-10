@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-    <Version>2.1.0</Version>
+    <Version>2.2.0</Version>
     <Authors>CloudExtend.io</Authors>
     <Company>Celigo, Inc.</Company>
     <Description>REST Client for NetSuite REST API and RESTlets</Description>
@@ -16,7 +16,7 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageReleaseNotes>
-      v2.1.0 - Added support for HTTP DELETE in RESTletClient
+      v2.2.0 - Added support for HTTP PUT in RESTletClient
     </PackageReleaseNotes>
   </PropertyGroup>
 
