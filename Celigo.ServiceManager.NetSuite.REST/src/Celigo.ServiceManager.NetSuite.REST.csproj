@@ -1,8 +1,8 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-    <Version>2.2.0</Version>
+    <TargetFramework>net8.0</TargetFramework>
+    <Version>3.0.0</Version>
     <Authors>CloudExtend.io</Authors>
     <Company>Celigo, Inc.</Company>
     <Description>REST Client for NetSuite REST API and RESTlets</Description>
@@ -16,16 +16,22 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageReleaseNotes>
-      v2.2.0 - Added support for HTTP PUT in RESTletClient
+      v1.3.2 - Added support for HTTP timeout with custom value while using RestletClient
+      v2.0.0 - Updated .net version
+      v3.0.0 - Upgraded to net8.0; added NetSuite Connection Guard RESTlet chokepoint (GuardedRestletClient + AddGuardedRestletClient).
     </PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="6.0.0" />
-    <PackageReference Include="Microsoft.Extensions.Http" Version="6.0.0" />
-    <PackageReference Include="Microsoft.Extensions.Options" Version="6.0.0" />
-    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="6.0.0" />
-    <PackageReference Include="System.Net.Http.Json" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="8.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="8.0.2" />
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="8.0.0" />
+    <PackageReference Include="System.Net.Http.Json" Version="8.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Celigo.NetSuite.ConnectionGuard.Abstractions" Version="1.1.0" />
+    <PackageReference Include="Celigo.NetSuite.ConnectionGuard.Decorators" Version="1.1.0" />
   </ItemGroup>
 
 </Project>

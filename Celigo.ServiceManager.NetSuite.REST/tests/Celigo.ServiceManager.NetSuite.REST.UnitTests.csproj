@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>net6.0</TargetFramework>
+        <TargetFramework>net8.0</TargetFramework>
 
         <IsPackable>false</IsPackable>
 
@@ -21,6 +21,12 @@
         <PackageReference Include="xunit" Version="2.9.2" />
         <PackageReference Include="xunit.runner.visualstudio" Version="2.8.2" />
         <PackageReference Include="coverlet.collector" Version="6.0.2" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Celigo.NetSuite.ConnectionGuard.Abstractions" Version="1.1.0" />
+        <PackageReference Include="Celigo.NetSuite.ConnectionGuard.Client" Version="1.1.0" />
+        <PackageReference Include="Celigo.NetSuite.ConnectionGuard.Decorators" Version="1.1.0" />
     </ItemGroup>
 
     <ItemGroup>
