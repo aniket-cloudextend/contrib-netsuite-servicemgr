@@ -16,8 +16,7 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageReleaseNotes>
-      v2.2.0 - Added support for HTTP PUT in RESTletClient
-      v3.0.0 - Upgraded to net8.0; added NetSuite Connection Guard REST chokepoint (GuardedRestClient + AddGuardedRestClient).
+      v3.0.0 - Upgraded to net8.0; added NetSuite Connection Guard REST chokepoint (GuardedRestClient).
     </PackageReleaseNotes>
   </PropertyGroup>
 
