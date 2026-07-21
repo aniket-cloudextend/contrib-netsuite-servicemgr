@@ -19,7 +19,13 @@ namespace Microsoft.Extensions.DependencyInjection
                 .AddOptions()
                 .Configure<RestClientOptions>(configuration.GetSection(RestClientOptions.ConfigurationSectionName))
                 .AddHttpClient()
-                .AddHttpClient<IRestClient, RestClient>();
+                .AddHttpClient<RestClient>();
+
+            services.AddNetSuiteConnectionGuard(configuration);
+            services.AddTransient<IRestClient>(sp => new GuardedRestClient(
+                sp.GetRequiredService<RestClient>(),
+                sp.GetRequiredService<GuardPipeline>(),
+                sp.GetRequiredService<INsCallContextAccessor>()));
 
             return services;
         }

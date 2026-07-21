@@ -16,9 +16,8 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageReleaseNotes>
-      v1.3.2 - Added support for HTTP timeout with custom value while using RestletClient
-      v2.0.0 - Updated .net version
-      v3.0.0 - Upgraded to net8.0; added NetSuite Connection Guard RESTlet chokepoint (GuardedRestletClient + AddGuardedRestletClient).
+      v2.2.0 - Added support for HTTP PUT in RESTletClient
+      v3.0.0 - Upgraded to net8.0; added NetSuite Connection Guard REST chokepoint (GuardedRestClient + AddGuardedRestClient).
     </PackageReleaseNotes>
   </PropertyGroup>
 
