@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
-    <Version>3.0.0</Version>
+    <Version>3.0.1</Version>
     <Authors>CloudExtend.io</Authors>
     <Company>Celigo, Inc.</Company>
     <Description>REST Client for NetSuite REST API and RESTlets</Description>
@@ -16,9 +16,7 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageReleaseNotes>
-      v1.3.2 - Added support for HTTP timeout with custom value while using RestletClient
-      v2.0.0 - Updated .net version
-      v3.0.0 - Upgraded to net8.0; added NetSuite Connection Guard RESTlet chokepoint (GuardedRestletClient + AddGuardedRestletClient).
+      v3.0.1 - Upgraded to net8.0; added NetSuite Connection Guard REST chokepoint (GuardedRestClient).
     </PackageReleaseNotes>
   </PropertyGroup>
 
