@@ -25,11 +25,11 @@
     <PackageReference Include="Microsoft.Extensions.Http" Version="8.0.1" />
     <PackageReference Include="Microsoft.Extensions.Options" Version="8.0.2" />
     <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="8.0.0" />
-    <PackageReference Include="System.Net.Http.Json" Version="8.0.0" />
+    <PackageReference Include="System.Net.Http.Json" Version="8.0.1" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Celigo.NetSuite.ConnectionGuard.Abstractions" Version="1.1.0" />
-    <PackageReference Include="Celigo.NetSuite.ConnectionGuard.Decorators" Version="1.1.0" />
+    <PackageReference Include="Celigo.NetSuite.ConnectionGuard.Abstractions" Version="1.2.0" />
+    <PackageReference Include="Celigo.NetSuite.ConnectionGuard.Decorators" Version="1.2.0" />
   </ItemGroup>
 
 </Project>
