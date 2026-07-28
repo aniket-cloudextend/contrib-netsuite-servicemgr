@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
-    <Version>3.0.1</Version>
+    <Version>3.0.2</Version>
     <Authors>CloudExtend.io</Authors>
     <Company>Celigo, Inc.</Company>
     <Description>REST Client for NetSuite REST API and RESTlets</Description>
@@ -16,7 +16,7 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageReleaseNotes>
-      v3.0.1 - Upgraded to net8.0; added NetSuite Connection Guard REST chokepoint (GuardedRestClient).
+      v3.0.2 - Updated System.Net.Http.Json to 8.0.1 and Celigo NetSuite Connection Guard dependencies to 1.2.0.
     </PackageReleaseNotes>
   </PropertyGroup>
 
@@ -25,11 +25,11 @@
     <PackageReference Include="Microsoft.Extensions.Http" Version="8.0.1" />
     <PackageReference Include="Microsoft.Extensions.Options" Version="8.0.2" />
     <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="8.0.0" />
-    <PackageReference Include="System.Net.Http.Json" Version="8.0.0" />
+    <PackageReference Include="System.Net.Http.Json" Version="8.0.1" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Celigo.NetSuite.ConnectionGuard.Abstractions" Version="1.1.0" />
-    <PackageReference Include="Celigo.NetSuite.ConnectionGuard.Decorators" Version="1.1.0" />
+    <PackageReference Include="Celigo.NetSuite.ConnectionGuard.Abstractions" Version="1.2.0" />
+    <PackageReference Include="Celigo.NetSuite.ConnectionGuard.Decorators" Version="1.2.0" />
   </ItemGroup>
 
 </Project>
