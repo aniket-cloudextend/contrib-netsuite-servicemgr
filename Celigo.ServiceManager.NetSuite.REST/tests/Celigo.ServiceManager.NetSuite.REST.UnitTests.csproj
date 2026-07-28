@@ -27,9 +27,9 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Celigo.NetSuite.ConnectionGuard.Abstractions" Version="1.1.0" />
+        <PackageReference Include="Celigo.NetSuite.ConnectionGuard.Abstractions" Version="1.2.0" />
         <PackageReference Include="Celigo.NetSuite.ConnectionGuard.Client" Version="1.1.0" />
-        <PackageReference Include="Celigo.NetSuite.ConnectionGuard.Decorators" Version="1.1.0" />
+        <PackageReference Include="Celigo.NetSuite.ConnectionGuard.Decorators" Version="1.2.1" />
     </ItemGroup>
 
     <ItemGroup>
