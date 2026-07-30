@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
-    <Version>3.0.3</Version>
+    <Version>3.0.4</Version>
     <Authors>CloudExtend.io</Authors>
     <Company>Celigo, Inc.</Company>
     <Description>REST Client for NetSuite REST API and RESTlets</Description>
@@ -16,6 +16,7 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageReleaseNotes>
+      v3.0.4 - bump ConnectionGuard.Decorators to 1.2.2 (mark offline/online split-route contract fix)
       v3.0.3 - version bump for package release
     </PackageReleaseNotes>
   </PropertyGroup>
@@ -29,7 +30,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Celigo.NetSuite.ConnectionGuard.Abstractions" Version="1.2.0" />
-    <PackageReference Include="Celigo.NetSuite.ConnectionGuard.Decorators" Version="1.2.1" />
+    <PackageReference Include="Celigo.NetSuite.ConnectionGuard.Decorators" Version="1.2.2" />
   </ItemGroup>
 
 </Project>
